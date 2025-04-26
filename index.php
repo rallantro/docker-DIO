@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>Exemplo PHP</title>
+<title>Gerador de Produtos aleatórios</title>
 </head>
 <body>
 
@@ -13,9 +13,9 @@ header('Content-Type: text/html; charset=iso-8859-1');
 
 echo 'Versao Atual do PHP: ' . phpversion() . '<br>';
 
-$servername = "54.234.153.24";
+$servername = "192.168.15.169";
 $username = "root";
-$password = "Senha123";
+$password = "190406";
 $database = "meubanco";
 
 // Criar conexão
@@ -34,11 +34,11 @@ $valor_rand2 = strtoupper(substr(bin2hex(random_bytes(4)), 1));
 $host_name = gethostname();
 
 
-$query = "INSERT INTO dados (AlunoID, Nome, Sobrenome, Endereco, Cidade, Host) VALUES ('$valor_rand1' , '$valor_rand2', '$valor_rand2', '$valor_rand2', '$valor_rand2','$host_name')";
+$query = "INSERT INTO dados (ID, Nome, Descricao, Barra) VALUES ('$valor_rand1' , '$valor_rand2', '$valor_rand2', '$valor_rand2')";
 
 
 if ($link->query($query) === TRUE) {
-  echo "New record created successfully";
+  echo "Novo recorde criado com sucesso!";
 } else {
   echo "Error: " . $link->error;
 }
