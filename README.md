@@ -11,3 +11,4 @@ Muito se tem falado de containers e consequentemente do Docker no ambiente de de
 ## Minha descrição:
 
 Em relação ao desafio de projeto, criei o fork e fui replicando em uma máquina local. Fiz algumas poucas modificações no banco de dados que passei através do próprio GitHub copiando e colando as alterações. 
+No meu projeto, segui a ideia de um mercado, ao invés de um sistema de alunos. 
